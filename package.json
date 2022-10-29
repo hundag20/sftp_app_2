@@ -1,0 +1,35 @@
+{
+  "name": "sftp_app_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "convert-excel-to-json": "^1.7.0",
+    "cron": "^2.1.0",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^16.0.2",
+    "gd-sprest": "^7.3.2",
+    "knex": "^2.3.0",
+    "mssql": "^9.0.1",
+    "mysql2": "^2.3.3",
+    "node-fetch": "^3.2.10",
+    "node-sp-auth": "^3.0.7",
+    "nodemailer": "^6.7.8",
+    "nodemon": "^2.0.19",
+    "objection": "^3.0.1",
+    "request-promise": "^4.2.6",
+    "sharepoint": "^0.0.5",
+    "simple-excel-to-json": "^2.3.0",
+    "ssh2-sftp-client": "^9.0.4",
+    "tedious": "^15.1.0",
+    "winston": "^3.8.2",
+    "xlsx": "^0.18.5"
+  }
+}
