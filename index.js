@@ -3,6 +3,7 @@ const { listenForNewEntries } = require("./app");
 const dotenv = require("dotenv");
 const logger = require("./controllers/logger");
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+require("./server");
 
 const sftp = new Client("moenco-client");
 
