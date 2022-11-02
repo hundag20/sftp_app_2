@@ -18,7 +18,7 @@ logger("info", config.host);
 logger("info", config.password);
 logger("info", config.port);
 logger("info", config.username);
-(async () => {
+const func = async () => {
   try {
     const dir = await sftp.connect(config);
     await sftp.cwd();
@@ -36,5 +36,8 @@ logger("info", config.username);
     console.log(err);
     //TODO: log to file
     logger("error", err.message);
+    //retry connection
+    func();
   }
-})();
+};
+func();
