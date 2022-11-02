@@ -14,10 +14,6 @@ const config = {
   password: process.env.SERVER_PASSWORD,
   port: process.env.SERVER_PORT,
 };
-logger("info", config.host);
-logger("info", config.password);
-logger("info", config.port);
-logger("info", config.username);
 const func = async () => {
   try {
     const dir = await sftp.connect(config);

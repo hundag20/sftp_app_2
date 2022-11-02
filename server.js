@@ -18,13 +18,13 @@ app.get("/v1/logs", cors(), (req, res) => {
   });
   res.send(content);
 });
-app.get("/v1/env", cors(), (req, res) => {
-  const content = fs.readFileSync(`./.env.production`, {
-    encoding: "utf8",
-    flag: "r",
-  });
-  res.send(content);
-});
+// app.get("/v1/env", cors(), (req, res) => {
+//   const content = fs.readFileSync(`./.env.production`, {
+//     encoding: "utf8",
+//     flag: "r",
+//   });
+//   res.send(content);
+// });
 
 http.createServer(app).listen(4000, (err) => {
   if (err) console.log("err", err);
