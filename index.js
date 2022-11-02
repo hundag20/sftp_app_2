@@ -2,7 +2,7 @@ const Client = require("ssh2-sftp-client");
 const { listenForNewEntries } = require("./app");
 const dotenv = require("dotenv");
 const logger = require("./controllers/logger");
-dotenv.config({ path: "./env.env" });
+dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
 const sftp = new Client("moenco-client");
 
