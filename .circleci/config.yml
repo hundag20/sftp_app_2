@@ -10,7 +10,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          name: inject env variable into dotenv file 
+          name: inject enviroment variable into dotenv file 
           command: |
             touch .env.production
             echo -e "SERVER_HOST=$SERVER_HOST\nSERVER_PORT=$SERVER_PORT\nSERVER_USERNAME=$SERVER_USERNAME\nARCHIVE_LOCATION=$ARCHIVE_LOCATION" "SERVER_PASSWORD=$SERVER_PASSWORD\n" > .env.production
