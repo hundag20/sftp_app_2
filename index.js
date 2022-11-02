@@ -3,6 +3,7 @@ const { listenForNewEntries } = require("./app");
 const dotenv = require("dotenv");
 const logger = require("./controllers/logger");
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+console.log("d: ", process.env.NODE_ENV);
 require("./server");
 
 const sftp = new Client("moenco-client");
@@ -13,11 +14,15 @@ const config = {
   password: process.env.SERVER_PASSWORD,
   port: process.env.SERVER_PORT,
 };
+logger("info", config);
 (async () => {
   try {
     const dir = await sftp.connect(config);
     await sftp.cwd();
-    sftp.on("error", (err) => logger("error", err));
+    sftp.on("error", (err) => {
+      console.log(err);
+      logger("error", err);
+    });
     logger("info", `connected to remote SFTP server`);
     module.exports = { sftp };
 
@@ -25,6 +30,7 @@ const config = {
     // .then(() => sftp.end());
     // return
   } catch (err) {
+    console.log(err);
     //TODO: log to file
     logger("error", err.message);
   }
