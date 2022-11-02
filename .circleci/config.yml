@@ -40,7 +40,7 @@ jobs:
             echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_PASS"
             docker push $IMAGE_NAME
 workflows:
-  version: 2
+  version: 2.1
   build-deploy-master:
     jobs:
       - build:
