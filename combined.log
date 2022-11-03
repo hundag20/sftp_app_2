@@ -408,3 +408,9 @@
 {"level":"info","message":"Wed Nov 02 2022 16:10:02 GMT+0300 (East Africa Time) ... Concur_ET_8250"}
 {"level":"error","message":"Wed Nov 02 2022 16:11:07 GMT+0300 (East Africa Time) ... connect: getConnection: Timed out while waiting for handshake"}
 {"level":"error","message":"Wed Nov 02 2022 16:12:14 GMT+0300 (East Africa Time) ... connect: getConnection: Timed out while waiting for handshake"}
+{"level":"info","message":"Wed Nov 02 2022 16:13:10 GMT+0300 (East Africa Time) ... 3.8.242.245"}
+{"level":"info","message":"Wed Nov 02 2022 16:13:10 GMT+0300 (East Africa Time) ... l7#R15JY!9"}
+{"level":"info","message":"Wed Nov 02 2022 16:13:10 GMT+0300 (East Africa Time) ... 22"}
+{"level":"info","message":"Wed Nov 02 2022 16:13:10 GMT+0300 (East Africa Time) ... Concur_ET_8250"}
+{"level":"info","message":"Wed Nov 02 2022 16:13:34 GMT+0300 (East Africa Time) ... connected to remote SFTP server"}
+{"level":"info","message":"Wed Nov 02 2022 16:13:38 GMT+0300 (East Africa Time) ... cron Func executed, next job in 15 days"}
