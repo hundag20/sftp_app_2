@@ -10,9 +10,7 @@ exports.listenForNewEntries = async () => {
       //get new files
       let fileList = await sftp.list("/");
       const fileListNames = fileList.map((el) => el.name);
-      logger("info", `arch: ${process.env.ARCHIVE_LOCATION}`);
-      const archloc = process.env.ARCHIVE_LOCATION.replace("/", "\\");
-      const currentFiles = fs.readdirSync(`\\\\${archloc}`);
+      const currentFiles = fs.readdirSync(`\\172.20.105.81\Concur_Files`);
       const oldFiles = currentFiles.filter((el) => !fileListNames.includes(el));
       const newFiles = fileListNames.filter((el) => !currentFiles.includes(el));
       //check new file existence
