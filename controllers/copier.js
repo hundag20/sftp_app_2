@@ -1,9 +1,13 @@
 const fs = require("fs");
 const logger = require("./logger");
 
-const archive = async (fileName, content) => {
+const copy = async (fileName, content) => {
   try {
-    const fd = fs.openSync(`${process.env.ARCHIVE_LOCATION}\\${fileName}`, "w");
+    const path =
+      process.env.NODE_ENV === "production"
+        ? `${process.env.ARCHIVE_LOCATION}/${fileName}`
+        : `${process.env.ARCHIVE_LOCATION}\\${fileName}`;
+    const fd = fs.openSync(path, "w");
     fs.writeFileSync(fd, content);
     fs.close(fd);
     logger(
@@ -15,14 +19,14 @@ const archive = async (fileName, content) => {
   }
 };
 
-exports.archiver = async (file) => {
+exports.copier = async (file) => {
   try {
     const content = fs.readFileSync(`./temp/${file}`, {
       encoding: "utf8",
       flag: "r",
     });
     const fileName = file;
-    await archive(fileName, content);
+    await copy(fileName, content);
   } catch (err) {
     logger("error", err);
   }

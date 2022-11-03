@@ -1,4 +1,5 @@
 var fs = require("fs");
+const copier = require("./controllers/copier");
 const CronJob = require("cron").CronJob;
 
 exports.listenForNewEntries = async () => {
@@ -28,10 +29,10 @@ exports.listenForNewEntries = async () => {
         }
         logger("info", `${remotePaths.length} files downloaded to temp folder`);
 
-        //save files to archive
+        //copy files to archive_location
         for (el of newFiles) {
           //fileName
-          archiver(el);
+          copier(el);
         }
       }
       logger("info", "cron Func executed, next job in 15 days");
