@@ -415,3 +415,16 @@
 {"level":"info","message":"Wed Nov 02 2022 16:13:34 GMT+0300 (East Africa Time) ... connected to remote SFTP server"}
 {"level":"info","message":"Wed Nov 02 2022 16:13:38 GMT+0300 (East Africa Time) ... cron Func executed, next job in 15 days"}
 {"level":"error","message":"Thu Nov 03 2022 08:11:22 GMT+0300 (East Africa Time) ... Error: list: list: No SFTP connection available /"}
+{"level":"info","message":"Thu Nov 03 2022 11:31:53 GMT+0300 (East Africa Time) ... connected to remote SFTP server"}
+{"level":"info","message":"Thu Nov 03 2022 11:31:53 GMT+0300 (East Africa Time) ... cron Func executed, next job in 15 days"}
+{"level":"info","message":"Thu Nov 03 2022 11:32:10 GMT+0300 (East Africa Time) ... connected to remote SFTP server"}
+{"level":"error","message":"Thu Nov 03 2022 11:32:10 GMT+0300 (East Africa Time) ... Error: ENOENT: no such file or directory, scandir '/archive'"}
+{"level":"info","message":"Thu Nov 03 2022 11:32:41 GMT+0300 (East Africa Time) ... connected to remote SFTP server"}
+{"level":"error","message":"Thu Nov 03 2022 11:32:41 GMT+0300 (East Africa Time) ... Error: ENOENT: no such file or directory, scandir '/archive'"}
+{"level":"info","message":"Thu Nov 03 2022 11:33:26 GMT+0300 (East Africa Time) ... connected to remote SFTP server"}
+{"level":"info","message":"Thu Nov 03 2022 11:33:26 GMT+0300 (East Africa Time) ... new files added to remote server"}
+{"level":"error","message":"Thu Nov 03 2022 11:33:26 GMT+0300 (East Africa Time) ... Error: ENOENT: no such file or directory, open './temp/Concur_Upload_ET_8250_20220915.xlsx'"}
+{"level":"info","message":"Thu Nov 03 2022 11:36:26 GMT+0300 (East Africa Time) ... connected to remote SFTP server"}
+{"level":"info","message":"Thu Nov 03 2022 11:36:26 GMT+0300 (East Africa Time) ... new files added to remote server"}
+{"level":"info","message":"Thu Nov 03 2022 11:37:30 GMT+0300 (East Africa Time) ... connected to remote SFTP server"}
+{"level":"info","message":"Thu Nov 03 2022 11:37:30 GMT+0300 (East Africa Time) ... new files added to remote server"}

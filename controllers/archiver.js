@@ -6,7 +6,10 @@ const archive = async (fileName, content) => {
     const fd = fs.openSync(`${process.env.ARCHIVE_LOCATION}\\${fileName}`, "w");
     fs.writeFileSync(fd, content);
     fs.close(fd);
-    logger("info", `file(${fileName}) archived to "\\\\172.20.105.115S\\sf"`);
+    logger(
+      "info",
+      `file(${fileName}) archived to ${process.env.ARCHIVE_LOCATION}`
+    );
   } catch (err) {
     logger("error", err);
   }
