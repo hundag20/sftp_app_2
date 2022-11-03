@@ -414,3 +414,4 @@
 {"level":"info","message":"Wed Nov 02 2022 16:13:10 GMT+0300 (East Africa Time) ... Concur_ET_8250"}
 {"level":"info","message":"Wed Nov 02 2022 16:13:34 GMT+0300 (East Africa Time) ... connected to remote SFTP server"}
 {"level":"info","message":"Wed Nov 02 2022 16:13:38 GMT+0300 (East Africa Time) ... cron Func executed, next job in 15 days"}
+{"level":"error","message":"Thu Nov 03 2022 08:11:22 GMT+0300 (East Africa Time) ... Error: list: list: No SFTP connection available /"}
