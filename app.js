@@ -24,7 +24,7 @@ exports.listenForNewEntries = async () => {
           const fd = fs.openSync(`./temp/${el.split("/")[1]}`, "w");
 
           await sftp.fastGet(el, `./temp/${el.split("data/")[1]}`);
-          console.log("file saved: ", el.split("/")[1]);
+          logger("info", "file saved: ", el.split("/")[1]);
           fs.close(fd);
         }
         logger("info", `${remotePaths.length} files downloaded to temp folder`);

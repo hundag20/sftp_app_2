@@ -207,3 +207,5 @@
 {"level":"error","message":"Thu Nov 03 2022 11:32:10 GMT+0300 (East Africa Time) ... Error: ENOENT: no such file or directory, scandir '/archive'"}
 {"level":"error","message":"Thu Nov 03 2022 11:32:41 GMT+0300 (East Africa Time) ... Error: ENOENT: no such file or directory, scandir '/archive'"}
 {"level":"error","message":"Thu Nov 03 2022 11:33:26 GMT+0300 (East Africa Time) ... Error: ENOENT: no such file or directory, open './temp/Concur_Upload_ET_8250_20220915.xlsx'"}
+{"level":"error","message":"Sat Nov 05 2022 09:12:52 GMT+0300 (East Africa Time) ... connect: getConnection: Timed out while waiting for handshake"}
+{"level":"error","message":"Sat Nov 05 2022 09:15:23 GMT+0300 (East Africa Time) ... connect: getConnection: Timed out while waiting for handshake"}

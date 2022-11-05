@@ -3,6 +3,7 @@ const cors = require("cors");
 const fs = require("fs");
 const bodyParser = require("body-parser");
 var http = require("http");
+const logger = require("./controllers/logger");
 
 const app = express();
 
@@ -26,9 +27,9 @@ app.get("/v1/logs", cors(), (req, res) => {
 //   res.send(content);
 // });
 
-http.createServer(app).listen(4000, (err) => {
-  if (err) console.log("err", err);
-  console.log("sftp-app-2 micro-service running on 4000");
+http.createServer(app).listen(5000, (err) => {
+  if (err) logger("error", err);
+  else logger("info", "sftp-app-2 micro-service running on 5000");
 });
 module.exports = app;
 
