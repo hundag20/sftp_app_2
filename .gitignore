@@ -3,3 +3,6 @@ node_modules
 /.env.development
 /temp/*
 !/temp/test.txt
+/combined.log
+/error.JSON
+/info.JSON
